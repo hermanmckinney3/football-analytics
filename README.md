@@ -11,3 +11,8 @@ This project focuses on collecting, analyzing, and visualizing college football 
 
 ## Tools
 Python, pandas, SQL, Power BI
+
+## Data
+
+Data was pulled using the CFBD API and stored in a PostgreSQL database.  
+Due to size, the dataset is not included in this repository.

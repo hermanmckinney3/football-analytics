@@ -1,2 +1,1 @@
-# cfb-game-prediction-model
-(MAE ≈ 13)
+# API-data-pull

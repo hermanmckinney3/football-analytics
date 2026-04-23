@@ -1,38 +1,85 @@
-College Football Data Analysis
+# College Football Data Analysis (NC Teams)
 
 ## Overview
-This project focuses on collecting, analyzing, and visualizing college football data using multiple tools.
+This project analyzes performance trends for North Carolina FBS teams (Wake Forest, NC State, North Carolina, Duke) using data pulled from the CFBD API.
 
-## Components
-- API Data Pull (Python)
-- SQL Queries for data exploration
-- Power BI Dashboard for visualization
-- Statistical analysis (correlation, ANOVA)
+The project demonstrates a full analytics workflow including:
 
-## Tools
-Python, pandas, SQL, Power BI
+* Data collection (API)
+* Data querying (SQL)
+* Data analysis (Python, R)
+* Data visualization (Power BI, Plotly)
 
-## Data
-Data was pulled using the CFBD API and stored in a PostgreSQL database.  
-Due to size, the dataset is not included in this repository.
+---
+
+## Data Source
+Data was collected using the College Football Data API.
+
+To run the API script (`api_call.ipynb`), you must provide your own API key via environment variables.
+
+Due to size and reproducibility, a cleaned dataset is included:
+
+* `dataset_nc_teams_2025.csv` → main dataset used for analysis
+* `dataset_wake_forest_ppg.csv` → subset for visualization
+
+---
 
 ## Power BI Dashboard
-Analyzes performance trends for North Carolina Football teams (Wake Forest, NC State, North Carolina, Duke) in 2025.
 
-Key metrics include:
-- Points per game
-- Average total yards
-- Turnovers per game
+This dashboard analyzes:
+
+* Points per game trends
+* Average total yards
+* Turnovers per game
 
 ![Dashboard Preview](dashboard_preview.png)
 
+---
 
 ## Points vs First Downs Analysis
-This analysis explores the relationship between points scored and total first downs at the game level for North Carolina FBS teams (Wake Forest, NC State, North Carolina, Duke).
+
+This analysis examines the relationship between scoring and offensive efficiency at the game level.
+
 ![Points vs First Downs](points_vs_firstdowns.png)
 
 ### Key Finding
+
 A moderate positive correlation (r = 0.61) was observed between first downs and points scored, suggesting that teams that sustain drives more effectively tend to generate higher scoring outputs.
 
-### Tools
-Python, pandas, Plotly
+---
+
+## ANOVA: Points Per Game by Team
+
+A one-way ANOVA test found a statistically significant difference in average points per game among North Carolina FBS teams (F = 3.13, p = 0.035).
+
+Post-hoc analysis (Tukey HSD) revealed that North Carolina scored significantly fewer points per game than Duke, while no other pairwise differences were statistically significant.
+
+---
+
+## SQL Analysis
+
+The repository includes SQL queries used for:
+
+* Team-level performance metrics
+* Situational statistics (e.g., third down efficiency)
+* Game-level comparisons
+
+File: `sql_queries.sql`
+
+---
+
+## Tools Used
+
+* Python (pandas, Plotly)
+* R (ANOVA, statistical testing)
+* SQL (PostgreSQL)
+* Power BI
+
+---
+
+## Notes
+
+* API key is not included for security reasons.
+* Data cleaning was performed during the API processing stage and in Python prior to analysis.
+* This project focuses on clarity of analysis rather than full data engineering pipelines.
+

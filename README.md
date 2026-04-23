@@ -25,3 +25,14 @@ Key metrics include:
 - Turnovers per game
 
 ![Dashboard Preview](dashboard_preview.png)
+
+
+## Points vs First Downs Analysis
+This analysis explores the relationship between points scored and total first downs at the game level for North Carolina FBS teams (Wake Forest, NC State, North Carolina, Duke).
+![Points vs First Downs](points_vs_firstdowns.png)
+
+### Key Finding
+A moderate positive correlation (r = 0.61) was observed between first downs and points scored, suggesting that teams that sustain drives more effectively tend to generate higher scoring outputs.
+
+### Tools
+Python, pandas, Plotly

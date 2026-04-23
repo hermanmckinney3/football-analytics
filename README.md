@@ -62,9 +62,10 @@ The repository includes SQL queries used for:
 
 * Team-level performance metrics
 * Situational statistics (e.g., third down efficiency)
-* Game-level comparisons
+* Game, team, and conference aggregations nad comparisons
 
 File: `sql_queries.sql`
+<img width="1919" height="1034" alt="sql_query_preview" src="https://github.com/user-attachments/assets/e13fec00-aea6-477a-a085-68078187ba68" />
 
 ---
 

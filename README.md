@@ -40,7 +40,7 @@ This dashboard analyzes:
 
 This analysis examines the relationship between scoring and offensive efficiency at the game level.
 
-![Points vs First Downs](points_vs_firstdowns.png)
+![Points vs First Downs](nc_teams_anova_boxplots.png)
 
 ### Key Finding
 

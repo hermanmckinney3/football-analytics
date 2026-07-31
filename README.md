@@ -10,6 +10,17 @@ The project demonstrates a full analytics workflow including:
 * Data analysis (Python, R)
 * Data visualization (Power BI, Plotly)
 
+### Project Status
+
+This repository represents an earlier end-to-end analytics and machine learning project.
+It is included to demonstrate my workflow for collecting, cleaning, querying, analyzing, visualizing, and modeling college football data.
+
+The original data collection notebook uses the College Football Data API. 
+ince this project was created, the API's authentication requirements and endpoint structure have changed.
+As a result, the API extraction notebook may require updates before it can successfully retrieve new data.
+
+I have included some cleaned datasets to be used to reproduce some statistical analyses.
+
 ---
 
 ## Data Source
@@ -69,12 +80,36 @@ File: `sql_queries.sql`
 
 ---
 
+## Machine Learning Model
+
+The project includes an XGBoost regression model developed to predict college football team performance using historical game and team statistics.
+
+### Model Feature Importance:
+
+<img width="1815" height="632" alt="image" src="https://github.com/user-attachments/assets/e4927088-c3a7-4819-b445-897aed5b7bfd" />
+
+### Model Performance without Elo
+
+<img width="673" height="632" alt="image" src="https://github.com/user-attachments/assets/2c1738b0-41a2-4323-853b-efaa2d6daf4d" />
+
+**Mean Absolute Error (MAE):** `15.45`
+
+### Model Performance WITH Elo
+
+<img width="945" height="808" alt="image" src="https://github.com/user-attachments/assets/7082edbc-b217-42f5-a743-6e1427d76ef0" />
+
+**Mean Absolute Error (MAE):** `15.45`
+
+---
+
+
 ## Tools Used
 
 * Python (pandas, Plotly)
 * R (ANOVA, statistical testing)
 * SQL (PostgreSQL)
 * Power BI
+* XGBoost
 
 ---
 

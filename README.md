@@ -98,7 +98,7 @@ The project includes an XGBoost regression model developed to predict college fo
 
 <img width="945" height="808" alt="image" src="https://github.com/user-attachments/assets/7082edbc-b217-42f5-a743-6e1427d76ef0" />
 
-**Mean Absolute Error (MAE):** `15.45`
+**Mean Absolute Error (MAE):** `13.69`
 
 ---
 
